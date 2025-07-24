@@ -9,21 +9,48 @@
 
     <title>Fotogram</title>
 </head>
-<body>
-    <header>
+<body onload="render()">
+    <header class="header">
         <a href="index.html" >
             <img class="logo" src="./img/Fotogram_Logo.svg" alt="Fotogram Logo">
         </a>
     </header>
     <main>
         <div class="spacingArea"></div>
+
         <div id="imagesArea">
             <h1>Underwater World</h1>
-            <div id="imageDisplayContainer"></div>
+            <div onclick="openDialog()" aria-controls="imageDialog" aria-haspopup="dialog" id="displayImageContainer"></div>
         </div>
+
         <div class="spacingArea"></div>
+
+        <dialog id="imageDialog" aria-labelledby="dialogTitle" aria-describedby="dialogImages">
+            <header>
+                <h2 id="dialogTitle">Underwater World</h2>
+            </header>
+            <div id="dialogImages">
+                <img class="showDialogImage" src="./img/jellyfish-6653502.jpg" alt="Jellyfish">
+            </div>
+            <footer class="dialogFooter">
+                <div class="iconBarLeft">
+                    <div class="icon">
+                        <img src="./img/arrow-left.png" alt="Left Arrow Icon" height="32px">
+                    </div>
+                    <div class="icon">
+                        <img src="./img/arrow-right.png" alt="Right Arrow Icon" height="32px">
+                    </div>
+                </div>
+                <div class="iconBarRight">
+                    <div class="icon" onclick="closeDialog()" ondblclick="toggleOverlay()" aria-label="Close dialog">
+                        <img src="./img/close-button.png" alt="Close Icon" height="32px">
+                    </div>
+                </div>
+            </footer>
+        </dialog>
+
     </main>
-    <footer>
+    <footer class="mainFooter">
         <div class="footerText">© 2025 Fotogram</div>
     </footer>
     
