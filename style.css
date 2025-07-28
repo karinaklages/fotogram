@@ -111,6 +111,17 @@ p {
   box-shadow: 10px 10px 14px #40565fa4;
 }
 
+#dialogOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #3b5058a0;
+  display: none;
+  z-index: 99;
+}
+
 dialog {
   all: unset;
   height: 570px;
@@ -119,18 +130,12 @@ dialog {
   border-style: none;
   border-radius: 16px;
   background-color: #0a1720;
-}
-
-dialog::backdrop {
-  background: #3b5058a0;
-}
-
-dialog#imageDialog {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 20px;
+  z-index: 100;
 }
 
 dialog#imageDialog:not([open]) {

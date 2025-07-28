@@ -56,39 +56,26 @@ function render() {
     placeImages.innerHTML = ""; 
 
     for (let index = 0; index < imagesArray.length; index++) {
-        let img = document.createElement("img");
-        img.src = imagesArray[index];
-        img.alt = "Image" + " " + (index + 1);
-        img.classList.add("imageStyle");
-
-        placeImages.appendChild(img);
+        placeImages.innerHTML += imageTemplate(index);
     }
 }
 
-render()
-// Funktioniert mit onclick="openDialog()" in index.html Zeile 23. Allerdings wird dann die ganze div beim onclick-Event angewählt, nicht das einzelne Foto. 
-
-
-/*
-// Renders the images out of the array
-function render() {
-
-    let placeImages = document.getElementById("displayImageContainer")
-    placeImages.innerHTML = ""; 
-
-    for (let index = 0; index < imagesArray.length; index++) {
-        placeImages.innerHTML += 
-    }
+function imageTemplate(index) {
+    return  `<img src="${imagesArray[index]}" 
+            onclick="openDialog(${index})"  
+            class="imageStyle"> 
+            `;
 }
 
 render() 
-*/
 
 
 // Opens and closes the image dialog
 const dialogRef = document.getElementById("imageDialog")
+const overlayRef = document.getElementById("dialogOverlay");
 
 function openDialog() {
+    overlayRef.style.display = "block";
     dialogRef.classList.remove("dNone");
     dialogRef.showModal();
 }
@@ -96,4 +83,5 @@ function openDialog() {
 function closeDialog() {
     dialogRef.close();
     dialogRef.classList.add("dNone");
+    overlayRef.style.display = "none";
 }
