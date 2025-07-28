@@ -1,7 +1,6 @@
 "use strict";
 
 
-
 let imagesArray = [
 "./img/clownfish-3030148.jpg",
 "./img/coral-2694453.jpg",
@@ -16,7 +15,6 @@ let imagesArray = [
 "./img/reef-tank-3624204.jpg",
 "./img/penguin-2203693.jpg",
 ];
-
 
 
 let imageNamesArray = [
@@ -35,7 +33,6 @@ let imageNamesArray = [
 ];
 
 
-
 let countNumbersArray = [
 "1 / 12",
 "2 / 12",
@@ -50,7 +47,6 @@ let countNumbersArray = [
 "11 / 12",
 "12 / 12",
 ];
-
 
 
 // Renders the images out of the array
@@ -73,7 +69,6 @@ render()
 // Funktioniert mit onclick="openDialog()" in index.html Zeile 23. Allerdings wird dann die ganze div beim onclick-Event angewählt, nicht das einzelne Foto. 
 
 
-
 /*
 // Renders the images out of the array
 function render() {
@@ -88,7 +83,6 @@ function render() {
 
 render() 
 */
-
 
 
 // Opens and closes the image dialog

@@ -1,0 +1,35 @@
+@media (max-width: 465px) {
+    .logo {
+        height: 28px;
+        padding-left: 30px;
+    }
+
+    h1 {
+        font-size: 32px;
+        font-weight: 600;
+        text-align: center;
+        color: white;
+        padding-bottom: 80px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 999px) {
+    .displayImageContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1299px) {
+    .displayImageContainer {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1300px) {
+    .displayImageContainer {
+        grid-template-columns: repeat(4, 1fr);
+        max-width: 1200px;
+    }
+}
