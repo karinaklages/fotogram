@@ -1,3 +1,124 @@
+@media (min-width: 1300px) {
+    .displayImageContainer {
+        grid-template-columns: repeat(4, 1fr);
+        max-width: 1200px;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1299px) {
+    .displayImageContainer {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 999px) {
+    .displayImageContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 700px) and (max-width: 820px) {
+    dialog {
+        height: 470px;
+        width: 550px;
+        border-radius: 16px;
+        background-color: #0a1720;
+    }
+
+    h2 {
+        padding-left: 30px;
+    }
+
+    .subheadline {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .showDialogImage {
+        margin-left: 30px;
+        margin-right: 30px;
+        object-fit: cover;
+        height: 250px;
+        width: 490px;
+        border-radius: 16px;
+        margin-bottom: 35px;
+    }
+
+    .dialogFooter {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 30px;
+    }
+
+    .iconBarLeft {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        padding-left: 22px;
+        padding-bottom: 30px;
+    }
+
+    .iconBarRight {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding-right: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+@media (max-width: 699px) {
+    dialog {
+        height: 460px;
+        width: 300px;
+        border-radius: 16px;
+        background-color: #0a1720;
+    }
+
+    h2 {
+        padding-left: 20px;
+    }
+
+    .subheadline {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .showDialogImage {
+        margin-left: 20px;
+        margin-right: 20px;
+        object-fit: cover;
+        height: 250px;
+        width: 260px;
+        border-radius: 16px;
+        margin-bottom: 30px;
+    }
+
+    .dialogFooter {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 20px;
+    }
+
+    .iconBarLeft {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        padding-left: 14px;
+        padding-bottom: 25px;
+    }
+
+    .iconBarRight {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding-right: 20px;
+        padding-bottom: 20px;
+    }
+}
+
 @media (max-width: 465px) {
     .logo {
         height: 28px;
@@ -15,21 +136,53 @@
     }
 }
 
-@media (min-width: 768px) and (max-width: 999px) {
-    .displayImageContainer {
-        grid-template-columns: repeat(2, 1fr);
+@media (max-width: 400px) {
+    dialog {
+        height: 450px;
+        width: 250px;
+        border-radius: 16px;
+        background-color: #0a1720;
     }
-}
 
-@media (min-width: 1000px) and (max-width: 1299px) {
-    .displayImageContainer {
-        grid-template-columns: repeat(3, 1fr);
+    h2 {
+        padding-left: 5px;
     }
-}
 
-@media (min-width: 1300px) {
-    .displayImageContainer {
-        grid-template-columns: repeat(4, 1fr);
-        max-width: 1200px;
+    .subheadline {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .showDialogImage {
+        margin-left: 5px;
+        margin-right: 5px;
+        object-fit: cover;
+        height: 240px;
+        width: 240px;
+        border-radius: 16px;
+        margin-bottom: 30px;
+    }
+
+    .dialogFooter {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 15px;
+    }
+
+    .iconBarLeft {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        padding-left: 0px;
+        padding-bottom: 15px;
+    }
+
+    .iconBarRight {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding-right: 5px;
+        padding-bottom: 15px;
     }
 }

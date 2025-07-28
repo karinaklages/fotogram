@@ -158,7 +158,6 @@ dialog#imageDialog:not([open]) {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #0a1720;
   height: 50px;
 }
 
