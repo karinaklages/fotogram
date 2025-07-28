@@ -20,14 +20,19 @@
 
         <div id="imagesArea">
             <h1>Underwater World</h1>
-            <div onclick="openDialog()" aria-controls="imageDialog" aria-haspopup="dialog" id="displayImageContainer"></div>
+            <div onclick="openDialog()" aria-controls="imageDialog" aria-haspopup="dialog" id="displayImageContainer" class="displayImageContainer"></div> <!-- onclick="openDialog()" -->
         </div>
 
         <div class="spacingArea"></div>
 
         <dialog id="imageDialog" aria-labelledby="dialogTitle" aria-describedby="dialogImages">
             <header>
-                <h2 id="dialogTitle">Underwater World</h2>
+                <h2 id="dialogHeadline">Underwater World</h2>
+                <div class="subheadline">
+                    <p id="dialogImageName">Jellyfish</p>
+                    <p id="countImageNumber">9 / 12</p>
+                </div>
+
             </header>
             <div id="dialogImages">
                 <img class="showDialogImage" src="./img/jellyfish-6653502.jpg" alt="Jellyfish">
@@ -42,7 +47,7 @@
                     </div>
                 </div>
                 <div class="iconBarRight">
-                    <div class="icon" onclick="closeDialog()" ondblclick="toggleOverlay()" aria-label="Close dialog">
+                    <div class="icon" onclick="closeDialog()" aria-label="Close dialog">
                         <img src="./img/close-button.png" alt="Close Icon" height="32px">
                     </div>
                 </div>

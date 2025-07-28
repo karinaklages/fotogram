@@ -68,8 +68,15 @@ h2 {
   font-weight: 600;
   color: white;
   padding-top: 30px;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
   padding-left: 50px;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #3b5058;
+  padding-bottom: 20px;
 }
 
 #imagesArea {
@@ -79,7 +86,7 @@ h2 {
   min-height: calc(100vh - 380px);
 }
 
-#displayImageContainer {
+.displayImageContainer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 56px;
@@ -102,7 +109,7 @@ h2 {
 
 dialog {
   all: unset;
-  height: 550px;
+  height: 570px;
   width: 650px;
   border: none;
   border-style: none;
@@ -124,6 +131,13 @@ dialog#imageDialog {
 
 dialog#imageDialog:not([open]) {
   display: none;
+}
+
+.subheadline {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .showDialogImage {
