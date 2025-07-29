@@ -63,7 +63,8 @@ function render() {
 function imageTemplate(index) {
     return  `<img src="${imagesArray[index]}" 
             onclick="openDialog(${index})"  
-            class="imageStyle"> 
+            class="imageStyle"
+            tabindex="0"> 
             `;
 }
 
