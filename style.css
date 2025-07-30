@@ -136,10 +136,6 @@ dialog {
   z-index: 100;
 }
 
-dialog#imageDialog:not([open]) {
-  display: none;
-}
-
 .subheadline {
   display: flex;
   justify-content: space-between;

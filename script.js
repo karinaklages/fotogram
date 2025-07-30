@@ -64,6 +64,12 @@ function closeDialog() {
 }
 
 
+// Event-bubbling closes overlay with onclick
+function overlayClick(event) {
+    event.stopPropagation();
+}
+
+
 // Renders the dialog with all its html elements
 function renderDialog(index) {
     let placeDialog = document.getElementById("imageDialog")

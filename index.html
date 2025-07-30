@@ -25,10 +25,11 @@
         </div>
         <div class="spacingArea"></div>
 
-        <div id="dialogOverlay"></div>
-        <dialog id="imageDialog" aria-labelledby="dialogTitle" aria-describedby="dialogImages"></dialog>
+        <div id="dialogOverlay" onclick="closeDialog()">
+            <dialog id="imageDialog" onclick="overlayClick(event)" aria-labelledby="dialogTitle" aria-describedby="dialogImages"></dialog>
+        </div>
     </main>
-    
+
     <footer class="mainFooter">
         <div class="footerText">© 2025 Fotogram</div>
     </footer>
