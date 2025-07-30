@@ -120,7 +120,7 @@ p {
   z-index: 99;
 }
 
-dialog {
+.dialog {
   all: unset;
   height: 570px;
   width: 650px;

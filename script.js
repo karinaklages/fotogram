@@ -47,19 +47,15 @@ render()
 
 
 // Opens and closes the dialog
-const dialogRef = document.getElementById("imageDialog")
+const dialogRef = document.getElementById("imageDialog");
 const overlayRef = document.getElementById("dialogOverlay");
 
-function openDialog(index) { // Needs the index to show the current picture. 
+function openDialog(index) {
     renderDialog(index);
-    overlayRef.style.display = "block";
-    dialogRef.classList.remove("dNone");
-    dialogRef.showModal();
+    overlayRef.style.display = "flex";
 }
 
 function closeDialog() {
-    dialogRef.close();
-    dialogRef.classList.add("dNone");
     overlayRef.style.display = "none";
 }
 
