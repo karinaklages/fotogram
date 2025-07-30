@@ -40,12 +40,21 @@ main, html {
 }
 
 .header {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
   background-color: #10242d;
   height: 100px;
   width: auto;
   position: sticky;
   display: flex;
   align-items: center;
+}
+
+.logoContainer {
+  width: 100%;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .logo {
