@@ -1,3 +1,6 @@
+// variables 
+
+// === data ===
 let imagesArray = [
     { url: "./img/clownfish-3030148.jpg", title: "Clownfish", alt: "Clownfish in the ocean" },
     { url: "./img/coral-2694453.jpg", title: "Coral", alt: "Coral in the ocean" },
@@ -13,14 +16,19 @@ let imagesArray = [
     { url: "./img/penguin-2203693.jpg", title: "Penguin",  alt: "Penguin in the ocean" },
 ];
 
-
+// === state ===
 let index = 0;
-let currentImageIndex = 0;
+let currentImageIndex = 0; // dialog navigation
+
+// === DOM manipulation ===
 const dialogRef = document.getElementById("imageDialog");
 const overlayRef = document.getElementById("dialogOverlay");
 
 
-// Renders the images out of the array with onload="render()" in index.html
+
+// functions
+
+// renders the images out of the array with onload="render()" in index.html
 function render() {
 
     let placeImages = document.getElementById("displayImageContainer")
@@ -41,28 +49,25 @@ function imageTemplate(index) {
             `;
 }
 
-
-// Opens and closes the dialog
+// opens and closes the dialog
 function openDialog(index) {
     currentImageIndex = index;
-    document.body.style.overflow = 'hidden';
+    document.body.style.overflow = "hidden";
     renderDialog(currentImageIndex);
     overlayRef.style.display = "flex";
 }
 
 function closeDialog() {
     overlayRef.style.display = "none";
-    document.body.style.overflow = 'auto';
+    document.body.style.overflow = "auto";
 }
 
-
-// Event-bubbling closes overlay with onclick
+// event-bubbling closes overlay with onclick
 function overlayClick(event) {
     event.stopPropagation();
 }
 
-
-// Renders the dialog with all its html elements
+// renders the dialog with all its html elements
 function renderDialog(index) {
     let placeDialog = document.getElementById("imageDialog")
     placeDialog.innerHTML = "";
@@ -101,8 +106,7 @@ function dialogTemplate(index) {
     `;
 }
 
-
-// Navigates the arrow buttons within the dialog 
+// navigates the arrow buttons within the dialog 
 function nextImage() {
     currentImageIndex = (currentImageIndex + 1 ) % imagesArray.length;
     renderDialog(currentImageIndex);
