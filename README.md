@@ -9,4 +9,6 @@ This project is part of the Developer Akademie's software developer training pro
 
 ###
 
-![Fotogram](./img/fotogram.jpg)
+![Fotogram](./img/fotogram.jpg)<br>
+
+![Fotogram](./img/fotogram-dialog.jpg)
