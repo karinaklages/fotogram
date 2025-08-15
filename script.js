@@ -1,4 +1,4 @@
-// variables 
+// VARIABLES 
 
 // === data ===
 let imagesArray = [
@@ -26,7 +26,7 @@ const overlayRef = document.getElementById("dialogOverlay");
 
 
 
-// functions
+// FUNCTIONS
 
 // renders the images out of the array with onload="render()" in index.html
 function render() {
