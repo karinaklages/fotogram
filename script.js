@@ -17,7 +17,7 @@ let imagesArray = [
 
 // State 
 let index = 0;
-let currentImageIndex = 0; // dialog navigation
+let currentImageIndex = 0; // Dialog navigation
 
 // DOM manipulation
 const dialogRef = document.getElementById("imageDialog");
