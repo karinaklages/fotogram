@@ -2,9 +2,9 @@
 
 ###
 
-<p align="left">Fotogram is a platform for displaying pictures. All images are rendered using JavaScript and the platform also features a dialog pop-up window.<br><br> 
+<p align="left">Fotogram is a platform for displaying pictures. All images are rendered using JavaScript and the platform also features a pop-up window.<br><br> 
 
-This project is part of the Developer Akademie's software developer training program to learn more about JavaScript. The logo used was provided by the Developer Akademie. All other images are from Pixabay.
+This project is part of the Developer Akademie's software developer training program to learn more about JavaScript. Certain technical and logical requirements had to be met for this project, but I was able to incorporate my own ideas into the design. The logo used was provided by the Developer Akademie. All other images are from Pixabay.
 </p><br>
 
 ###
