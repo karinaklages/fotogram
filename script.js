@@ -27,7 +27,6 @@ const overlayRef = document.getElementById("dialogOverlay");
 // Functions
 // Renders the images out of the array with onload="render()" in index.html
 function render() {
-
     let placeImages = document.getElementById("displayImageContainer")
     placeImages.innerHTML = ""; 
 
