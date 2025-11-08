@@ -27,7 +27,7 @@ function dialogTemplate(index) {
         <footer class="dialogFooter">
             <div class="iconBarLeft">
                 <div class="icon">
-                    <img src="./img/arrow-left.png" alt="Left Arrow Icon" height="32px" aria-label="Back button" onclick="prevImage()">
+                    <img src="./img/arrow-left.png" alt="Left Arrow Icon" height="32px" aria-label="Backward button" onclick="prevImage()">
                 </div>
                 <div class="icon">
                     <img src="./img/arrow-right.png" alt="Right Arrow Icon" height="32px" aria-label="Forward button" onclick="nextImage()">
