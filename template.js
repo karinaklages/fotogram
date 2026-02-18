@@ -1,12 +1,12 @@
 // Template for array images
 function imageTemplate(index) {
     return  `<img src="${imagesArray[index].url}" 
-            title="${imagesArray[index].title}" 
-            alt="${imagesArray[index].alt}"
-            onclick="openDialog(${index})"  
-            class="imageStyle"
-            tabindex="0"> 
-            `;
+        title="${imagesArray[index].title}" 
+        alt="${imagesArray[index].alt}"
+        onclick="openDialog(${index})"  
+        class="imageStyle"
+        tabindex="0"> 
+    `;
 }
 
 // Template for pop-up window
