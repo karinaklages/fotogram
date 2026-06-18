@@ -2,7 +2,7 @@
 
 A web application for displaying photos. Images are rendered dynamically via JavaScript and can be viewed in an enlarged pop-up window.
 
-Fotogram is part of the Developer Akademie's training programme for software developers (www.developerakademie.com). Certain technical and logical requirements had to be met for this project, but I was able to incorporate my own ideas into the design. The logo used was provided by the Developer Akademie. All other images are from Pixabay.
+Fotogram is part of the Developer Akademie's training programme for software developers ([www.developerakademie.com](https://www.developerakademie.com)). Certain technical and logical requirements had to be met for this project, but I was able to incorporate my own ideas into the design. The logo used was provided by the Developer Akademie. All other images are from Pixabay.
 
 ![Fotogram Gallery](./img/fotogram.jpg)
 
